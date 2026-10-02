@@ -1,0 +1,208 @@
+:root {
+  --ink: #241816;
+  --muted: #5e534c;
+  --paper: #f3efe6;
+  --card: #fffdf8;
+  --line: #e4d9c8;
+  --rule: #792024;
+  --rule-soft: #f6e4e1;
+  --chip: #efe4d2;
+  --focus: #9a3412;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(var(--rule), var(--rule)) top / 100% 6px no-repeat,
+    var(--paper);
+  font-family: "Noto Sans Thai", "Leelawadee UI", "Thonburi", "Tahoma", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+a { color: var(--rule); }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  background: white;
+  padding: 0.4rem 0.7rem;
+}
+.skip:focus { top: 0.75rem; }
+
+.masthead, main, footer {
+  width: min(42rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.masthead { padding-top: 1.4rem; }
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--rule);
+  font-weight: 700;
+}
+
+.brand {
+  margin: 0.15rem 0 0;
+  font-family: "Noto Serif Thai", "Noto Sans Thai", "Leelawadee UI", Palatino, serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 650;
+}
+.brand a { color: inherit; text-decoration: none; }
+
+.tagline { margin: 0.2rem 0 0.8rem; color: var(--muted); }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+nav a {
+  text-decoration: none;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+main { padding-bottom: 2rem; }
+
+h1, h2, h3 {
+  font-family: "Noto Serif Thai", "Noto Sans Thai", "Leelawadee UI", Palatino, serif;
+  line-height: 1.35;
+  font-weight: 650;
+}
+h1 { font-size: 1.55rem; margin: 0.2rem 0 0.4rem; text-wrap: balance; }
+h2 { font-size: 1.2rem; margin: 1.6rem 0 0.4rem; }
+h3 { font-size: 1.12rem; margin: 0.35rem 0; }
+
+.lead, .lag { color: var(--muted); margin-top: 0; }
+.lag {
+  background: var(--rule-soft);
+  border-radius: 0.6rem;
+  padding: 0.7rem 0.85rem;
+  color: var(--ink);
+}
+
+.counts, .tools { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.counts a, .tools a {
+  background: var(--chip);
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+}
+
+.item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem 0.7rem;
+  margin: 0.8rem 0;
+}
+
+.kicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.section {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  min-height: 1.7rem;
+  padding: 0 0.4rem;
+  border-radius: 0.35rem;
+  font-weight: 700;
+  color: white;
+}
+.sec-ko { background: #792024; }
+.sec-kho { background: #8a5a12; }
+.sec-q { background: #3f5c4b; }
+.sec-ngo { background: #4b5563; }
+.sec-extra { background: #6b7280; }
+.sec-other { background: #57534e; }
+
+.cat { text-decoration: none; font-weight: 650; }
+.flag {
+  background: var(--rule-soft);
+  color: var(--rule);
+  border-radius: 999px;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.meta, .provinces, .pdf { color: var(--muted); margin: 0.2rem 0; font-size: 0.95rem; }
+.provinces { color: var(--ink); }
+
+.summary {
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px dashed var(--line);
+}
+.summary p { margin: 0.25rem 0; }
+.affected span {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+
+.daylist, .cats { list-style: none; padding: 0; }
+.daylist li, .cats li { margin: 0.45rem 0; }
+.daylist a { font-weight: 650; text-decoration: none; }
+.daylist span, .cats em { color: var(--muted); margin-left: 0.5rem; font-style: normal; }
+.cats a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  text-decoration: none;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 0.75rem 0.9rem;
+}
+.cats strong { color: var(--ink); font-size: 1.05rem; }
+.cats span { color: var(--muted); }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 2rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (min-width: 720px) {
+  body { font-size: 1.08rem; }
+  .brand { font-size: 2.4rem; }
+}
+
+@media print {
+  nav, footer, .skip, .pdf { display: none; }
+  body { background: white; }
+  .item { break-inside: avoid; }
+}

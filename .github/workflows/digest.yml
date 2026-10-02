@@ -1,0 +1,92 @@
+name: Daily digest
+
+on:
+  schedule:
+    # 00:30 and 12:30 UTC = 07:30 and 19:30 Asia/Bangkok
+    - cron: "30 0 * * *"
+    - cron: "30 12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/summaries/**"
+      - "src/**"
+      - "scripts/**"
+      - "assets/**"
+      - ".github/workflows/digest.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: digest-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test
+        run: |
+          python -m pip install pytest
+          python -m pytest
+      - name: Install OCR tools
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr tesseract-ocr-tha
+      - name: Fetch, summarize, build, notify
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash-lite
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          SITE_URL: https://mrcorinthian.github.io/ratchakitcha-digest
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/run_digest.py
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site
+          if-no-files-found: error
+      - name: Upload GitHub Pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Commit fetched data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/items data/summaries data/state
+          if git diff --staged --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Update Royal Gazette digest data [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

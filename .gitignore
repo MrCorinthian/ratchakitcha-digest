@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
+site/
+tmp/
+ocr-tmp/
+data/subscribers.json
