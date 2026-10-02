@@ -1,0 +1,12 @@
+{
+  "subscribers": [
+    {
+      "subscriber_id": "example-telegram",
+      "channel": "telegram",
+      "destination": "REPLACE_WITH_CHAT_ID",
+      "keywords": ["ค่าจ้างขั้นต่ำ", "ภาษี", "ผังเมือง", "ระยอง"],
+      "plan": "keywords_5",
+      "active": false
+    }
+  ]
+}
