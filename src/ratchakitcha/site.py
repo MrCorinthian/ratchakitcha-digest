@@ -272,7 +272,7 @@ def recent_items(days: dict[str, list[Item]], limit: int = 100) -> list[Item]:
     return collected[:limit]
 
 
-def build_site(root: Path, site_dir: Path | None = None) -> Path:
+def build_site(root: Path, site_dir: Path | None = None, notice: str = "") -> Path:
     items_dir = root / "data" / "items"
     summaries_dir = root / "data" / "summaries"
     output = site_dir or (root / "site")
@@ -309,7 +309,9 @@ def build_site(root: Path, site_dir: Path | None = None) -> Path:
                 f"ยังไม่มีประกาศชุดใหม่ในข้อมูลที่ดึงมา "
                 f"ด้านล่างเป็นประกาศล่าสุดวันที่ {escape(format_thai_date(digest_date))}</p>"
             )
+        fetch_note = f'<p class="lag">{escape(notice)}</p>' if notice else ""
         body = (
+            f"{fetch_note}"
             f"<h1>สรุปวันที่ {escape(format_thai_date(digest_date))}</h1>"
             f"{note}"
             f"<p class=\"lead\">{len(digest_items)} เรื่อง เรียงเรื่องสำคัญไว้ก่อน</p>"
@@ -318,7 +320,9 @@ def build_site(root: Path, site_dir: Path | None = None) -> Path:
             f"{_items_html(digest_items, summaries, 0)}"
         )
     else:
+        fetch_note = f'<p class="lag">{escape(notice)}</p>' if notice else ""
         body = (
+            f"{fetch_note}"
             "<h1>ยังไม่มีรายการ</h1>"
             "<p class=\"lead\">ระบบจะดึงประกาศวันละสองครั้ง เมื่อมีรายการใหม่ หน้านี้จะแสดงเรื่องสำคัญก่อน</p>"
         )

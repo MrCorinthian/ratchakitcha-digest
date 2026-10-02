@@ -8,7 +8,7 @@ This is not legal advice and it is not a government website. The official text i
 
 Twice a day, at 00:30 and 12:30 UTC (07:30 and 19:30 Bangkok), and when someone runs the workflow by hand:
 
-1. `POST https://apprkj.soc.go.th/report_documents_monthly.php` with `month=0` downloads the current month's Excel file (date, title, เล่ม, ตอน, ประเภท, หน้า, URL). A second request uses the previous month number. When that response is the same file, it is ignored.
+1. `POST https://apprkj.soc.go.th/report_documents_monthly.php` with `month=0` downloads the current month's Excel file (date, title, เล่ม, ตอน, ประเภท, หน้า, URL). If that response is a Cloudflare challenge, the job retries with backoff and tries the same script as `month=<calendar month>`, the previous month, a GET query, and the `www` host. It does not try to solve the challenge. The government open-data catalog (`gdcatalog.go.th`, dataset `gdpublish-dataset-02-04`) is public but only current through April 2569, so it is not used as a daily source.
 2. The homepage listing on `https://apprkj.soc.go.th/` is parsed so the last days of the previous month are not missed when the spreadsheet has already rolled over. Items that show up late are merged into the publication date they belong to.
 3. Items are stored in `data/items/YYYY-MM-DD.json`, deduped by the PDF document id. Dates and numbers come from the spreadsheet when both sources have the same document.
 4. A rule-based classifier sets a category, an importance score, and province tags. No paid API is required.
@@ -16,7 +16,7 @@ Twice a day, at 00:30 and 12:30 UTC (07:30 and 19:30 Bangkok), and when someone 
 6. The static site is deployed to GitHub Pages. RSS and Atom feeds are included.
 7. If the matching secrets exist, and this run found new document ids, and that channel has not already sent today (Bangkok date), the job sends one Telegram channel post and one Buttondown email. Missing secrets are skipped.
 
-The HTML pages of `ratchakitcha.soc.go.th` are behind a Cloudflare challenge. This project does not try to pass that challenge. Direct PDF links and the apprkj spreadsheet are the sources. If the spreadsheet request itself is challenged, the job fails and says so.
+The HTML pages of `ratchakitcha.soc.go.th` are behind a Cloudflare challenge. This project does not try to pass that challenge. Direct PDF links and the apprkj spreadsheet are the sources. If every spreadsheet form is challenged, the job keeps `data/items`, still builds and deploys the site, and marks the Actions run with a warning instead of a failure. Notifications wait for a later run that actually finds new documents.
 
 A GitHub-hosted run on 2 October 2026 downloaded the October workbook: 139 documents, all dated 1 October 2026. The homepage listing was challenged from that runner, so the job kept the spreadsheet and still built the site.
 
@@ -127,7 +127,7 @@ Do not put the Telegram token, the Buttondown key, or the Gemini key in the auto
 
 GitHub Actions ทำงานวันละสองครั้ง เวลา 07:30 และ 19:30 ตามเวลาประเทศไทย และเมื่อกดรันเอง
 
-1. ดึงไฟล์ Excel รายเดือนจาก `POST https://apprkj.soc.go.th/report_documents_monthly.php` ด้วย `month=0` แล้วลองขอเดือนก่อนหน้าอีกหนึ่งครั้ง ถ้าได้ไฟล์เดิมจะทิ้ง
+1. ดึงไฟล์ Excel รายเดือนจาก `POST https://apprkj.soc.go.th/report_documents_monthly.php` ด้วย `month=0` ถ้าได้ Cloudflare challenge จะรอแล้วลองใหม่ โดยส่งเดือนตามปฏิทิน (เช่น `month=10`) เดือนก่อนหน้า แบบ GET และโฮสต์ `www` ไม่พยายามแก้ challenge แคตตาล็อกข้อมูลภาครัฐ `gdcatalog.go.th` ชุด `gdpublish-dataset-02-04` เป็นข้อมูลสาธารณะแต่มีถึงเดือนเมษายน 2569 จึงไม่ใช้เป็นแหล่งรายวัน
 2. อ่านรายการบนหน้าแรกของ apprkj เพื่อไม่ให้วันท้ายเดือนที่แล้วยังค้างอยู่ในหน้ารายการหลุดไปตอนขึ้นเดือนใหม่ เรื่องที่มาทีหลังจะถูกใส่เข้าวันที่ประกาศของเรื่องนั้น
 3. เก็บรายการใน `data/items/YYYY-MM-DD.json` และตัดซ้ำด้วยเลขเอกสารใน URL ของ PDF วันที่และตัวเลขใช้ค่าจาก Excel เมื่อมีทั้งสองแหล่ง
 4. จัดหมวด ให้คะแนนความสำคัญ และติดแท็กจังหวัดจากชื่อเรื่อง โดยไม่ใช้ API ที่เสียเงิน
@@ -135,7 +135,7 @@ GitHub Actions ทำงานวันละสองครั้ง เวล�
 6. สร้างเว็บนิ่งภาษาไทย พร้อมฟีด RSS และ Atom แล้วขึ้น GitHub Pages
 7. ถ้ามี secret ของช่องนั้น และรอบนี้มีเอกสารใหม่ และวันนั้นตามเวลาประเทศไทยยังไม่ได้ส่ง จะส่ง Telegram หนึ่งข้อความ และอีเมล Buttondown หนึ่งฉบับ ถ้าไม่มี secret จะข้ามไปเงียบ ๆ
 
-หน้า HTML ของ ratchakitcha.soc.go.th ติด Cloudflare โปรเจกต์นี้ไม่พยายามผ่าน challenge นั้น ถ้าตัวไฟล์ Excel ถูก challenge งานจะล้มและบอกเหตุผล
+หน้า HTML ของ ratchakitcha.soc.go.th ติด Cloudflare โปรเจกต์นี้ไม่พยายามผ่าน challenge นั้น ถ้าทุกรูปแบบของไฟล์ Excel ถูก challenge งานจะเก็บ `data/items` ไว้ สร้างเว็บและขึ้น Pages ต่อ และติด warning ใน Actions แทนการล้ม การแจ้งเตือนจะรอรอบที่พบเอกสารใหม่จริง ๆ
 
 รันบน GitHub Actions เมื่อ 2 ตุลาคม 2026 ดึงสมุดงานเดือนตุลาคมได้ 139 ฉบับ ลงวันที่ 1 ตุลาคม 2026 ทั้งหมด หน้ารายการหน้าแรกติด challenge จาก runner นั้น งานจึงใช้เฉพาะไฟล์ Excel และยังสร้างเว็บได้
 

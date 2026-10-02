@@ -14,6 +14,11 @@ from ratchakitcha.site import build_site, site_url
 from ratchakitcha.store import known_doc_ids, load_all, merge_items, sort_items
 from ratchakitcha.summaries import load_summary_map
 
+SAVED_COPY_NOTICE = (
+    "รอบนี้ดึงรายการใหม่จากเว็บไซต์ราชกิจจานุเบกษาไม่ได้ "
+    "หน้านี้ใช้ข้อมูลชุดล่าสุดที่บันทึกไว้"
+)
+
 
 def run(
     root: Path,
@@ -29,10 +34,18 @@ def run(
     items_dir.mkdir(parents=True, exist_ok=True)
 
     new_ids: set[str] = set()
+    notice = ""
     if fetch:
-        fetched = [classify(item) for item in fetch_items()]
-        new_ids = merge_items(items_dir, fetched)
-        print(f"[store] {len(new_ids)} new document ids")
+        try:
+            fetched = [classify(item) for item in fetch_items()]
+        except Exception as error:  # noqa: BLE001 - a blocked source must still deploy
+            notice = SAVED_COPY_NOTICE
+            message = f"Gazette fetch failed; deploying the saved copy. {error}"
+            print(f"::warning::{' '.join(message.split())}")
+            print(f"[fetch] {message}")
+        else:
+            new_ids = merge_items(items_dir, fetched)
+            print(f"[store] {len(new_ids)} new document ids")
     else:
         print("[fetch] offline; using data/items already on disk")
 
@@ -49,10 +62,10 @@ def run(
         else:
             print("[summary] top items already have summaries")
 
-    site_dir = build_site(root)
+    site_dir = build_site(root, notice=notice)
     print(f"[site] wrote {site_dir}")
 
-    if notify and fetch:
+    if notify and fetch and not notice:
         days = load_all(items_dir)
         new_items = [item for items in days.values() for item in items if item.doc_id in new_ids]
         state = load_state(state_path)
