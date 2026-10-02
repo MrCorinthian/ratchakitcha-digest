@@ -42,7 +42,6 @@ jobs:
           python -m pip install pytest
           python -m pytest
       - name: Install OCR tools
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr tesseract-ocr-tha
       - name: Fetch, summarize, build, notify
         env:
