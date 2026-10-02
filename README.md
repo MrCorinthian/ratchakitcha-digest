@@ -18,6 +18,8 @@ Twice a day, at 00:30 and 12:30 UTC (07:30 and 19:30 Bangkok), and when someone 
 
 The HTML pages of `ratchakitcha.soc.go.th` are behind a Cloudflare challenge. This project does not try to pass that challenge. Direct PDF links and the apprkj spreadsheet are the sources. If the spreadsheet request itself is challenged, the job fails and says so.
 
+A GitHub-hosted run on 2 October 2026 downloaded the October workbook: 139 documents, all dated 1 October 2026. The homepage listing was challenged from that runner, so the job kept the spreadsheet and still built the site.
+
 ## Categories
 
 กฎหมาย/พ.ร.บ./พ.ร.ก./กฎกระทรวง, ประกาศกระทรวง, ภาษี/การคลัง, แรงงาน/ประกันสังคม, ที่ดิน/ผังเมือง, ล้มละลาย/พิทักษ์ทรัพย์, เครื่องราชฯ/ยศ, ท้องถิ่น/เทศบัญญัติ, อื่นๆ.
@@ -134,6 +136,8 @@ GitHub Actions ทำงานวันละสองครั้ง เวล�
 7. ถ้ามี secret ของช่องนั้น และรอบนี้มีเอกสารใหม่ และวันนั้นตามเวลาประเทศไทยยังไม่ได้ส่ง จะส่ง Telegram หนึ่งข้อความ และอีเมล Buttondown หนึ่งฉบับ ถ้าไม่มี secret จะข้ามไปเงียบ ๆ
 
 หน้า HTML ของ ratchakitcha.soc.go.th ติด Cloudflare โปรเจกต์นี้ไม่พยายามผ่าน challenge นั้น ถ้าตัวไฟล์ Excel ถูก challenge งานจะล้มและบอกเหตุผล
+
+รันบน GitHub Actions เมื่อ 2 ตุลาคม 2026 ดึงสมุดงานเดือนตุลาคมได้ 139 ฉบับ ลงวันที่ 1 ตุลาคม 2026 ทั้งหมด หน้ารายการหน้าแรกติด challenge จาก runner นั้น งานจึงใช้เฉพาะไฟล์ Excel และยังสร้างเว็บได้
 
 ## หมวด
 

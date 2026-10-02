@@ -99,4 +99,5 @@ def test_workflow_schedule_is_twice_daily():
     assert "TELEGRAM_BOT_TOKEN" in text
     assert "BUTTONDOWN_API_KEY" in text
     assert "GEMINI_API_KEY" in text
+    assert "cursor/ratchakitcha-digest-7627" not in text
     assert os.environ.get("TELEGRAM_BOT_TOKEN", "") == ""
