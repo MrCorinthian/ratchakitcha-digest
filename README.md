@@ -84,9 +84,9 @@ Add these under Settings → Secrets and variables → Actions. Leave a secret u
 4. Open **Settings → Pages → Build and deployment**.
 5. Set **Source** to **GitHub Actions**. Do not choose **Deploy from a branch**.
 6. After the first successful run on `main`, the site is published at `https://mrcorinthian.github.io/ratchakitcha-digest/`.
-7. You can start that run yourself: **Actions → Daily digest → Run workflow**.
+7. Set the permission in step 2 before you merge. Merging starts a digest run on `main`. You can also start one yourself: **Actions → Daily digest → Run workflow**.
 
-The workflow uploads a `site` artifact on every run, including a manual run from another branch. Deployment to Pages happens only from `main`.
+The workflow uploads a `site` artifact on every run, including a manual run from another branch. Deployment to Pages happens only from `main`. If the data push is rejected, the site can still deploy, but the same documents stay “new” and the next run will try to notify again. Fix the permission and run the workflow once more.
 
 ### 2. Add secrets only for the channels you want
 
@@ -201,9 +201,9 @@ PYTHONPATH=src python scripts/run_digest.py --no-notify
 4. เปิด **Settings → Pages → Build and deployment**
 5. ตั้ง **Source** เป็น **GitHub Actions** ไม่ใช้ **Deploy from a branch**
 6. หลังรันบน `main` สำเร็จครั้งแรก เว็บอยู่ที่ `https://mrcorinthian.github.io/ratchakitcha-digest/`
-7. กดรันเองได้ที่ **Actions → Daily digest → Run workflow**
+7. ตั้งสิทธิ์ในข้อ 2 ก่อน merge เพราะการ merge จะเริ่มงานบน `main` กดรันเองได้ที่ **Actions → Daily digest → Run workflow**
 
-ทุกครั้งที่รันจะมี artifact ชื่อ `site` รวมรันจาก branch อื่น การขึ้น Pages จริงเกิดเฉพาะจาก `main`
+ทุกครั้งที่รันจะมี artifact ชื่อ `site` รวมรันจาก branch อื่น การขึ้น Pages จริงเกิดเฉพาะจาก `main` ถ้า push ข้อมูลไม่ผ่าน เว็บยังขึ้นได้ แต่เอกสารชุดเดิมจะยังนับว่าใหม่ และรอบถัดไปจะพยายามส่งการแจ้งเตือนซ้ำ แก้สิทธิ์แล้วรันอีกครั้ง
 
 ### 2. ใส่ secret เฉพาะช่องที่ใช้
 
