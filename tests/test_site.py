@@ -100,4 +100,14 @@ def test_workflow_schedule_is_twice_daily():
     assert "BUTTONDOWN_API_KEY" in text
     assert "GEMINI_API_KEY" in text
     assert "cursor/ratchakitcha-digest-7627" not in text
+    assert 'data/raw/**' in text
+    assert "Update Royal Gazette digest data [skip ci]" in text
+    assert "git add data/items data/summaries data/state" in text
+    assert "git add data/raw" not in text
+    script = (ROOT / "scripts" / "push_raw.sh").read_text(encoding="utf-8")
+    assert "https://api.github.com" in script
+    assert "/contents/" in script
+    assert "monthly-latest.xlsx" in script
+    assert 'LATEST_MESSAGE="Update monthly Royal Gazette spreadsheet"' in script
+    assert "[skip ci]" in script
     assert os.environ.get("TELEGRAM_BOT_TOKEN", "") == ""

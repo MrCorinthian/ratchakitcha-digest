@@ -10,6 +10,7 @@ from ratchakitcha.dates import bangkok_now
 from ratchakitcha.fetch import fetch_items
 from ratchakitcha.gemini_summary import gemini_api_key, summarize_top_items
 from ratchakitcha.notify import deliver, load_state, save_state
+from ratchakitcha.raw_xlsx import load_committed_items, select_items
 from ratchakitcha.site import build_site, site_url
 from ratchakitcha.store import known_doc_ids, load_all, merge_items, sort_items
 from ratchakitcha.summaries import load_summary_map
@@ -36,14 +37,25 @@ def run(
     new_ids: set[str] = set()
     notice = ""
     if fetch:
+        live: list | None = None
+        live_error = ""
         try:
-            fetched = [classify(item) for item in fetch_items()]
-        except Exception as error:  # noqa: BLE001 - a blocked source must still deploy
+            live = fetch_items()
+        except Exception as error:  # noqa: BLE001 - runners are often challenged
+            live_error = str(error)
+            print(f"[fetch] live spreadsheet unavailable: {live_error}")
+        raw = load_committed_items(root)
+        if live is None and not raw:
             notice = SAVED_COPY_NOTICE
-            message = f"Gazette fetch failed; deploying the saved copy. {error}"
+            message = (
+                "Gazette fetch failed and data/raw has no workbook; "
+                f"deploying the saved copy. {live_error}"
+            )
             print(f"::warning::{' '.join(message.split())}")
             print(f"[fetch] {message}")
         else:
+            chosen = select_items(live or [], raw)
+            fetched = [classify(item) for item in chosen]
             new_ids = merge_items(items_dir, fetched)
             print(f"[store] {len(new_ids)} new document ids")
     else:

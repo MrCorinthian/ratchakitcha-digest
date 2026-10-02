@@ -4,7 +4,9 @@ from pathlib import Path
 import pytest
 
 from ratchakitcha.fetch import HOMEPAGE_URL, MONTHLY_URL, SpreadsheetUnavailable, fetch_items, spreadsheet_attempts
+from ratchakitcha.models import Item
 from ratchakitcha.pipeline import SAVED_COPY_NOTICE, run
+from ratchakitcha.raw_xlsx import select_items
 
 FIXTURE = Path(__file__).parent / "fixtures" / "sample_monthly_2026-10.xlsx"
 HOME = Path(__file__).parent / "fixtures" / "homepage_sample.html"
@@ -125,3 +127,56 @@ def test_blocked_fetch_keeps_saved_items_and_builds(tmp_path, monkeypatch):
     assert SAVED_COPY_NOTICE in index
     assert "133319" in index
     assert notified["called"] is False
+
+
+def _item(doc_id: str, publication_date: str, source: str = "xlsx") -> Item:
+    return Item(
+        doc_id=doc_id,
+        title=f"เรื่อง {doc_id}",
+        date=publication_date,
+        url=f"https://ratchakitcha.soc.go.th/documents/{doc_id}.pdf",
+        source=source,
+    )
+
+
+def test_newer_committed_workbook_wins_and_homepage_rows_stay():
+    live = [_item("1", "2026-10-01"), _item("9", "2026-10-02", source="homepage")]
+    raw = [_item("1", "2026-10-01"), _item("2", "2026-10-02")]
+    chosen = {item.doc_id: item for item in select_items(live, raw)}
+    assert set(chosen) == {"1", "2", "9"}
+    assert chosen["2"].source == "xlsx"
+    assert chosen["9"].source == "homepage"
+
+
+def test_newer_live_workbook_is_not_replaced_by_an_older_file():
+    live = [_item("3", "2026-10-02")]
+    raw = [_item("1", "2026-10-01"), _item("2", "2026-10-01")]
+    chosen = select_items(live, raw)
+    assert {item.doc_id for item in chosen} == {"3"}
+
+
+def test_blocked_fetch_ingests_committed_xlsx(tmp_path, monkeypatch):
+    root = tmp_path
+    raw = root / "data" / "raw"
+    raw.mkdir(parents=True)
+    (raw / "monthly-latest.xlsx").write_bytes(FIXTURE.read_bytes())
+    (raw / "monthly-2026-10.xlsx").write_bytes(FIXTURE.read_bytes())
+    assets = root / "assets"
+    assets.mkdir()
+    for path in (ROOT / "assets").iterdir():
+        if path.is_file():
+            (assets / path.name).write_bytes(path.read_bytes())
+
+    def blocked(**_kwargs):
+        raise SpreadsheetUnavailable("monthly xlsx challenged")
+
+    monkeypatch.setattr("ratchakitcha.pipeline.fetch_items", blocked)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    monkeypatch.delenv("BUTTONDOWN_API_KEY", raising=False)
+
+    new_ids = run(root)
+    assert "133319" in new_ids
+    index = (root / "site" / "index.html").read_text(encoding="utf-8")
+    assert SAVED_COPY_NOTICE not in index
+    assert "ระเบียบคณะกรรมการตรวจเงินแผ่นดิน" in index
