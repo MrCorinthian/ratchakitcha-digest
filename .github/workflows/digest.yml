@@ -7,7 +7,11 @@ on:
     - cron: "30 12 * * *"
   workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - main
+      # Included so this branch can run the live fetch once. workflow_dispatch
+      # is the long-term manual trigger; the integration token cannot dispatch.
+      - cursor/ratchakitcha-digest-7627
     paths:
       - "data/summaries/**"
       - "src/**"
