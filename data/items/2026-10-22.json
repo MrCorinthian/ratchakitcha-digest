@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-10-22",
-  "updated_at": "2026-10-22T17:22:16+00:00",
+  "updated_at": "2026-10-26T18:44:51+00:00",
   "items": [
     {
       "doc_id": "135427",
@@ -392,6 +392,586 @@
       "page": "9",
       "book": "",
       "url": "https://ratchakitcha.soc.go.th/documents/130697.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130692",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงกรรมการบริหารพรรคเศรษฐกิจใหม่",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "11",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130692.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130694",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงคณะกรรมการบริหารพรรควิชั่นใหม่",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "12",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130694.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130698",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงกรรมการบริหารพรรคทางเลือกใหม่",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "13",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130698.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130691",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงกรรมการบริหารพรรคเพื่อบ้านเมือง",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "15",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130691.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130699",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงกรรมการบริหารพรรคเศรษฐกิจ",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "17",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130699.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "131070",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดชลบุรี เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธิสายลม แสงแดด\"",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "18",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/131070.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ชลบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "131069",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดชลบุรี เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธิสร้างสรรค์อาชีพคนพิการไทย Workability Thailand\"",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "20",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/131069.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ชลบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130138",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดตาก เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธิริช สวิตเซอร์แลนด์ ไทยแลนด์ (Reach Switzerland Thailand Foundation)\"",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "22",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130138.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ตาก"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "8242",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดศรีสะเกษ เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธิวัดป่าพิมล\"",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "24",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/8242.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ศรีสะเกษ"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130141",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดเชียงราย เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับมูลนิธิ [มูลนิธิสาธารณสุขสงเคราะห์แม่จัน (ศาลเจ้า)]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "26",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130141.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "เชียงราย"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129849",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดสุรินทร์ เรื่อง จดทะเบียนการแก้ไขเพิ่มเติมข้อบังคับมูลนิธิ [มูลนิธิโรงพยาบาลสุรินทร์]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "27",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129849.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "สุรินทร์"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130339",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดอุดรธานี เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของมูลนิธิ [มูลนิธิปิยธรรมมูลนิธิ]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "28",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130339.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "อุดรธานี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130228",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดมหาสารคาม เรื่อง การจดทะเบียนการแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด [มูลนิธิมหาสารคามการกุศล \"เต็กก่า\"จีเสียงเกาะ]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "29",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130228.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "มหาสารคาม"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129937",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดนครราชสีมา เรื่อง การจดทะเบียนแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด หรือการเปลี่ยนแปลงกรรมการของมูลนิธิ [มูลนิธิสมาพันธ์เกษตรอินทรีย์ ในพระราชูปถัมภ์ สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "31",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129937.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "นครราชสีมา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129935",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดนครราชสีมา เรื่อง จดทะเบียนแต่งตั้งกรรมการมูลนิธิขึ้นใหม่ทั้งชุด หรือการเปลี่ยนแปลงกรรมการของมูลนิธิ หรือการแก้ไขเพิ่มเติมข้อบังคับของมูลนิธิ [มูลนิธิเทิดคุณธรรม]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "33",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129935.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "นครราชสีมา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130519",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดกระบี่ เรื่อง จดทะเบียนจัดตั้งสมาคมสนามยิงปืนอ่าวนาง",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "34",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130519.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "กระบี่"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130229",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดชลบุรี เรื่อง จดทะเบียนจัดตั้งสมาคมส่งเสริมและพัฒนาอาชีพผู้ประกอบการคริสเตียนไทย",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "36",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130229.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ชลบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130786",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดเพชรบูรณ์ เรื่อง จดทะเบียนจัดตั้งสมาคมศิษย์เก่าเพชรพิทยาคม",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "38",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130786.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "เพชรบูรณ์"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130771",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดลพบุรี เรื่อง จดทะเบียนจัดตั้งสมาคมสื่อปลอดภัยและสร้างสรรค์จังหวัดลพบุรี",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "40",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130771.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ลพบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129851",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดสระแก้ว เรื่อง จดทะเบียนจัดตั้งสมาคมส่งเสริมและพัฒนาอาชีพคนตาบอด",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "42",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129851.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "สระแก้ว"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130767",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดชลบุรี เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของสมาคม [สมาคมทหารผ่านศึกจังหวัดชลบุรี]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "45",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130767.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ชลบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "131109",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดเชียงราย เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของสมาคม [สมาคมผู้ปกครอง -  ครู โรงเรียนสามัคคีวิทยาคม]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "47",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/131109.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "เชียงราย"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130999",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดปราจีนบุรี เรื่อง จดทะเบียนการแก้ไขเพิ่มเติมข้อบังคับสมาคม [สมาคมทหารผ่านศึกจังหวัดปราจีนบุรี]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "48",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130999.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ปราจีนบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130514",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดมหาสารคาม เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของสมาคม [สมาคมผู้ปกครองและครูโรงเรียนสาธิตมหาวิทยาลัยมหาสารคาม (ฝ่ายมัธยม)]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "50",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130514.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "มหาสารคาม"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130394",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดสกลนคร เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับสมาคม [สมาคมคนตาบอดจังหวัดสกลนคร]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "55",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130394.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "สกลนคร"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130136",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดมหาสารคาม เรื่อง  การจดทะเบียนการแต่งตั้งกรรมการของสมาคมขึ้นใหม่ทั้งชุด [สมาคมการอ่านอย่างกว้างขวางในประเทศไทย]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "58",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130136.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "มหาสารคาม"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130928",
+      "title": "ประกาศสำนักงานที่ดินกรุงเทพมหานคร สาขาพระโขนง เรื่อง  การจดทะเบียนนิติบุคคลอาคารชุด [แคนวาส 39]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "60",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130928.pdf",
+      "category": "ที่ดิน/ผังเมือง",
+      "category_slug": "land",
+      "importance": 24,
+      "provinces": [
+        "กรุงเทพมหานคร"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130927",
+      "title": "ประกาศสำนักงานที่ดินกรุงเทพมหานคร สาขาพระโขนง เรื่อง  การจดทะเบียนนิติบุคคลอาคารชุด [เวีย 34 (Via 34)]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "61",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130927.pdf",
+      "category": "ที่ดิน/ผังเมือง",
+      "category_slug": "land",
+      "importance": 24,
+      "provinces": [
+        "กรุงเทพมหานคร"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129847",
+      "title": "ประกาศสำนักงานที่ดินจังหวัดชลบุรี เรื่อง การจดทะเบียนนิติบุคคลอาคารชุด [คอนโด อาร์โรซ เรซซิเดนซ์]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "62",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129847.pdf",
+      "category": "ที่ดิน/ผังเมือง",
+      "category_slug": "land",
+      "importance": 24,
+      "provinces": [
+        "ชลบุรี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "130995",
+      "title": "ประกาศสำนักงานที่ดินจังหวัดพระนครศรีอยุธยา สาขาวังน้อย เรื่อง การจดทะเบียนนิติบุคคลอาคารชุด [คอนโด มี นวนคร อาคาร จี]",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "63",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/130995.pdf",
+      "category": "ที่ดิน/ผังเมือง",
+      "category_slug": "land",
+      "importance": 24,
+      "provinces": [
+        "พระนครศรีอยุธยา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129787",
+      "title": "บันทึกการประชุมวุฒิสภา ครั้งที่  ๑  (สมัยสามัญประจำปีครั้งที่สอง) วันอังคารที่  ๒๕ สิงหาคม  ๒๕๖๙ ณ ห้องประชุมวุฒิสภา อาคารรัฐสภา ชั้น ๒ ถนนสามเสน แขวงถนนนครไชยศรี เขตดุสิต กรุงเทพมหานคร",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "64",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129787.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "กรุงเทพมหานคร"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129987",
+      "title": "บันทึกการประชุมสภาผู้แทนราษฎร ชุดที่ 27 ปีที่ 1 ครั้งที่ 3 (สมัยสามัญประจำปีครั้งที่สอง) วันพุธที่ 2 กันยายน 2569 ณ ห้องประชุมสภาผู้แทนราษฎร อาคารรัฐสภา",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "70",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129987.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "129988",
+      "title": "บันทึกการประชุมสภาผู้แทนราษฎร ชุดที่ 27 ปีที่ 1 ครั้งที่ 4 (สมัยสามัญประจำปีครั้งที่สอง) วันพฤหัสบดีที่ 3 กันยายน 2569 ณ ห้องประชุมสภาผู้แทนราษฎร อาคารรัฐสภา",
+      "date": "2026-10-22",
+      "volume": "143",
+      "part": "156",
+      "section": "ง",
+      "page": "73",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/129988.pdf",
       "category": "อื่นๆ",
       "category_slug": "other",
       "importance": 24,
