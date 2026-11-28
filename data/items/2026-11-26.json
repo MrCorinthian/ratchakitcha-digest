@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-11-26",
-  "updated_at": "2026-11-27T08:52:03+00:00",
+  "updated_at": "2026-11-28T08:10:01+00:00",
   "items": [
     {
       "doc_id": "138360",
@@ -720,6 +720,460 @@
       "category_slug": "ministry",
       "importance": 24,
       "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "135175",
+      "title": "ประกาศกรมอุตสาหกรรมพื้นฐานและการเหมืองแร่ เรื่อง ประทานบัตรสิ้นอายุ (ประทานบัตรที่ 27229/15815 ของบริษัท โชคอนันต์ก่อสร้างอุดรธานี จำกัด)",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "2",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/135175.pdf",
+      "category": "ประกาศกระทรวง",
+      "category_slug": "ministry",
+      "importance": 24,
+      "provinces": [
+        "อุดรธานี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "135858",
+      "title": "ประกาศสภาผู้แทนราษฎร  เรื่อง  ตั้งคณะกรรมาธิการร่วมกันเพื่อพิจารณาร่างพระราชบัญญัติระเบียบบริหารงานบุคคลส่วนท้องถิ่น  (ฉบับที่  ..)  พ.ศ.  .... [จำนวน 10 ราย 1 นายกรวีร์ ปริศนานันทกุล ฯลฯ]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "3",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/135858.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "135857",
+      "title": "ประกาศสภาผู้แทนราษฎร เรื่อง ตั้งคณะกรรมาธิการวิสามัญพิจารณาร่างพระราชบัญญัติการขนส่งทางบก  (ฉบับที่  ..) พ.ศ.  .... [จำนวน 25 ราย 1 นายกฤตย์อิชย์ ภาคย์อิชณน์ ฯลฯ]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "4",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/135857.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "131923",
+      "title": "ประกาศศาลแพ่งธนบุรี เรื่อง  คำสั่งว่า นายวิชา ชีพสุทธา เป็นคนสาบสูญ",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "6",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/131923.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136490",
+      "title": "ประกาศศาลจังหวัดอุดรธานี เรื่อง มีคำสั่งให้ นายเทียมศักดิ์ กุดสระ เป็นคนสาบสูญ",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "7",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136490.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "อุดรธานี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136245",
+      "title": "ประกาศอธิบดีกรมสรรพากร เรื่อง รายชื่อผู้รับทำการวิจัยและพัฒนาเทคโนโลยีและนวัตกรรม (ฉบับที่ 315)",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "8",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136245.pdf",
+      "category": "ภาษี/การคลัง",
+      "category_slug": "finance",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136628",
+      "title": "ประกาศจังหวัดนราธิวาส เรื่อง การจดทะเบียนเปลี่ยนแปลงชื่อมัสยิด [มัสยิดนะห์ฎอตุลอิสลามียะห์]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "9",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136628.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "นราธิวาส"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "94056",
+      "title": "ประกาศจังหวัดเพชรบูรณ์ เรื่อง ตั้งและกำหนดเขตหมู่บ้าน [อำเภอวิเชียรบุรี]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "10",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/94056.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "เพชรบูรณ์"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136647",
+      "title": "ประกาศจังหวัดยะลา เรื่อง การเปลี่ยนแปลงรายการในหนังสือสำคัญแสดงการจดทะเบียนจัดตั้งมัสยิด [มัสยิดนูรอลฮูดา]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "15",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136647.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ยะลา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "135849",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงกรรมการบริหารพรรคเครือข่ายชาวนาแห่งประเทศไทย",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "16",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/135849.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136314",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงกรรมการบริหารพรรคไทยสมาร์ท",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "18",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136314.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136315",
+      "title": "ประกาศนายทะเบียนพรรคการเมือง เรื่อง การเปลี่ยนแปลงคณะกรรมการบริหารพรรคท้องที่ไทย",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "19",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136315.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "134114",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดเชียงราย เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธิพิทักษ์เครีทสามเหลี่ยมทองคำ\"",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "21",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/134114.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "เชียงราย"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136469",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดบึงกาฬ เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธินาคาล้อมรักษ์\"",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "23",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136469.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "บึงกาฬ"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136208",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดเพชรบูรณ์ เรื่อง จดทะเบียนจัดตั้ง \"มูลนิธิโลกาหิตาธรรม\"",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "25",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136208.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "เพชรบูรณ์"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136073",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดอุดรธานี เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของมูลนิธิ [มูลนิธิพุทธประทีปธรรม]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "27",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136073.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "อุดรธานี"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136648",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดยะลา เรื่อง การจดทะเบียนการแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด [มูลนิธิทุนการศึกษาคณะราษฎรบำรุงจังหวัดยะลา (ชุดเดิม)]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "28",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136648.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ยะลา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136649",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดยะลา เรื่อง การจดทะเบียนการแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด [มูลนิธิอาบุบักร์]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "30",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136649.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ยะลา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136650",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดยะลา เรื่อง การจดทะเบียนการแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด [มูลนิธิมุสลิมศึกษา]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "31",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136650.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ยะลา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136652",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดยะลา เรื่อง การจดทะเบียนการแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด [มูลนิธิ 35 ปี เขตการศึกษา 2 (ชุดเดิม)]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "32",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136652.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ยะลา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136364",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดนครราชสีมา เรื่อง การจดทะเบียนแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด หรือการเปลี่ยนแปลงกรรมการของมูลนิธิ [มูลนิธิทองดี - ทิพย์ รัตนพานิช]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "34",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136364.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "นครราชสีมา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136362",
+      "title": "ประกาศนายทะเบียนมูลนิธิจังหวัดนครราชสีมา เรื่อง การจดทะเบียนแต่งตั้งกรรมการของมูลนิธิขึ้นใหม่ทั้งชุด หรือการเปลี่ยนแปลงกรรมการของมูลนิธิ [มูลนิธิวัดบึงพระ]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "35",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136362.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "นครราชสีมา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "136651",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดยะลา เรื่อง จดทะเบียนจัดตั้งสมาคมผู้ช่วยคนพิการยะลา",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "37",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/136651.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ยะลา"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "135984",
+      "title": "ประกาศของนายทะเบียนสมาคมประจำจังหวัดลำพูน เรื่อง จดทะเบียนจัดตั้งสมาคม [สมาคมไทยอง - ไทลื้อ]",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "39",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/135984.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "ลำพูน"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "134556",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดอำนาจเจริญ เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของสมาคมศิษย์เก่าโรงเรียนอำนาจเจริญ",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "41",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/134556.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "อำนาจเจริญ"
+      ],
+      "source": "xlsx"
+    },
+    {
+      "doc_id": "135929",
+      "title": "ประกาศนายทะเบียนสมาคมประจำจังหวัดอุดรธานี เรื่อง จดทะเบียนแก้ไขเพิ่มเติมข้อบังคับของสมาคม [สมาคมรองผู้อำนวยการโรงเรียนมัธยมศึกษา จังหวัดอุดรธานี)",
+      "date": "2026-11-26",
+      "volume": "143",
+      "part": "175",
+      "section": "ง",
+      "page": "64",
+      "book": "",
+      "url": "https://ratchakitcha.soc.go.th/documents/135929.pdf",
+      "category": "อื่นๆ",
+      "category_slug": "other",
+      "importance": 24,
+      "provinces": [
+        "อุดรธานี"
+      ],
       "source": "xlsx"
     },
     {
